@@ -1,0 +1,110 @@
+/* Login page specific styles */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 90px);
+    background-color: #f8f9fa;
+}
+
+.auth-form {
+    background-color: white;
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    transition: transform 0.3s ease;
+}
+
+.auth-form:hover {
+    transform: translateY(-5px);
+}
+
+.auth-form h2 {
+    text-align: center;
+    margin-bottom: 1.8rem;
+    color: #333;
+    font-size: 1.8rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #555;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #5d3fd3;
+    box-shadow: 0 0 0 2px rgba(93, 63, 211, 0.2);
+}
+
+.auth-button {
+    width: 100%;
+    padding: 14px;
+    background-color: #5d3fd3;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+}
+
+.auth-button:hover {
+    background-color: #4c32b9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.auth-button:active {
+    transform: translateY(0);
+}
+
+.auth-redirect {
+    text-align: center;
+    margin-top: 1.8rem;
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.auth-redirect a {
+    color: #5d3fd3;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.auth-redirect a:hover {
+    color: #4c32b9;
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 480px) {
+    .auth-form {
+        padding: 1.8rem;
+        margin: 0 1rem;
+    }
+    
+    .auth-form h2 {
+        font-size: 1.5rem;
+    }
+}

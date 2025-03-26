@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Details - EventHub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="event-details.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <a href="index.html">EventHub</a>
+            </div>
+            
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html#events" class="nav-link">Events</a></li>
+                <li class="nav-item"><a href="registrations.html" class="nav-link">Your Registrations</a></li>
+                <li class="nav-item auth-buttons" id="auth-section">
+                    <a href="login.html" class="nav-link login-btn">Login</a>
+                    <a href="signup.html" class="nav-link signup-btn">Sign Up</a>
+                </li>
+                <li class="nav-item user-profile" id="user-profile" style="display: none;">
+                    <span class="username" id="username-display"></span>
+                    <button id="logout-btn" class="logout-btn">Logout</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="event-details-container">
+            <div class="back-button">
+                <a href="index.html"><i class="fas fa-arrow-left"></i> Back to Events</a>
+            </div>
+            
+            <div class="event-details-card">
+                <div class="event-header">
+                    <h1 id="event-title">Event Title</h1>
+                </div>
+                
+                <div class="event-image-container">
+                    <img id="event-image" src="" alt="Event Image">
+                </div>
+                
+                <div class="event-info">
+                    <div class="event-meta-details">
+                        <div class="meta-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span id="event-date">Date</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span id="event-location">Location</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-user"></i>
+                            <span id="event-organizer">Organizer: EventHub Team</span>
+                        </div>
+                    </div>
+                    
+                    <div class="event-description-container">
+                        <h2>About This Event</h2>
+                        <p id="event-description">Event description will be displayed here.</p>
+                    </div>
+                    
+                    <div class="additional-info">
+                        <h2>Additional Information</h2>
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <h3>Event Type</h3>
+                                <p>Conference</p>
+                            </div>
+                            <div class="info-item">
+                                <h3>Category</h3>
+                                <p>Technology</p>
+                            </div>
+                            <div class="info-item">
+                                <h3>Capacity</h3>
+                                <p>500 attendees</p>
+                            </div>
+                            <div class="info-item">
+                                <h3>Language</h3>
+                                <p>English</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="registration-section">
+                        <div class="ticket-info">
+                            <h3>Registration</h3>
+                            <p class="ticket-price">$99.00</p>
+                            <p class="ticket-availability">Limited spots available</p>
+                        </div>
+                        <button id="register-button" class="register-btn">Register Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="event-details.js"></script>
+</body>
+</html>
