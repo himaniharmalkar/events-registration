@@ -1,0 +1,153 @@
+/* Registrations page specific styles */
+
+.registrations-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.registrations-container h1 {
+    font-size: 2.2rem;
+    color: #333;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+#login-message, #no-registrations {
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    margin: 2rem 0;
+}
+
+#login-message p, #no-registrations p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+#login-message a {
+    color: #5d3fd3;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#login-message a:hover {
+    text-decoration: underline;
+}
+
+.browse-events-btn {
+    display: inline-block;
+    background-color: #5d3fd3;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.browse-events-btn:hover {
+    background-color: #4c32b9;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(93, 63, 211, 0.3);
+}
+
+/* Registration card specific styles */
+.registration-card {
+    position: relative;
+}
+
+.registration-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #28a745;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.registration-info {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 6px;
+    margin: 1rem 0;
+}
+
+.registration-info p {
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.registration-info i {
+    color: #5d3fd3;
+    margin-right: 8px;
+    width: 16px;
+}
+
+.view-details-btn {
+    display: inline-block;
+    background-color: transparent;
+    color: #5d3fd3;
+    padding: 8px 16px;
+    border: 1px solid #5d3fd3;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.view-details-btn:hover {
+    background-color: #5d3fd3;
+    color: white;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .registrations-container h1 {
+        font-size: 1.8rem;
+    }
+    
+    #login-message p, #no-registrations p {
+        font-size: 1.1rem;
+    }
+    
+    .registration-info {
+        padding: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .registrations-container {
+        padding: 1.5rem 1rem;
+    }
+    
+    .registrations-container h1 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    #login-message, #no-registrations {
+        padding: 2rem 1rem;
+    }
+    
+    #login-message p, #no-registrations p {
+        font-size: 1rem;
+    }
+    
+    .browse-events-btn {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .view-details-btn {
+        width: 100%;
+    }
+}

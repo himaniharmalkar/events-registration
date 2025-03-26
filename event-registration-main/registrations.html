@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Registrations - EventHub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="cards.css">
+    <link rel="stylesheet" href="registrations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <a href="index.html">EventHub</a>
+            </div>
+            
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html#events" class="nav-link">Events</a></li>
+                <li class="nav-item"><a href="registrations.html" class="nav-link">Your Registrations</a></li>
+                <li class="nav-item auth-buttons" id="auth-section">
+                    <a href="login.html" class="nav-link login-btn">Login</a>
+                    <a href="signup.html" class="nav-link signup-btn">Sign Up</a>
+                </li>
+                <li class="nav-item user-profile" id="user-profile" style="display: none;">
+                    <span class="username" id="username-display"></span>
+                    <button id="logout-btn" class="logout-btn">Logout</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="registrations-container">
+            <h1>Your Registered Events</h1>
+            
+            <div id="login-message" style="display: none;">
+                <p>Please <a href="login.html">log in</a> to view your registrations.</p>
+            </div>
+            
+            <div id="no-registrations" style="display: none;">
+                <p>You haven't registered for any events yet.</p>
+                <a href="index.html" class="browse-events-btn">Browse Events</a>
+            </div>
+            
+            <div id="registrations-list" class="event-cards">
+                <!-- Registered events will be displayed here -->
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="registrations.js"></script>
+</body>
+</html>

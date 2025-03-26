@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventHub - Find and Register for Events</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="cards.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <a href="index.html">EVENTHUB</a>
+            </div>
+
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html#events" class="nav-link">Events</a></li>
+                <li class="nav-item"><a href="registrations.html" class="nav-link">Your Registrations</a></li>
+                <li class="nav-item auth-buttons" id="auth-section">
+                    <a href="login.html" class="nav-link login-btn">Login</a>
+                    <a href="signup.html" class="nav-link signup-btn">Sign Up</a>
+                </li>
+                <li class="nav-item user-profile" id="user-profile" style="display: none;">
+                    <span class="username" id="username-display"></span>
+                    <button id="logout-btn" class="logout-btn">Logout</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="hero-section">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Discover Amazing Events Near You</h1>
+                    <p>EventHub connects you with the best conferences, workshops, concerts, and more happening in your
+                        area. Find your next experience and register in just a few clicks.</p>
+                    <p>Join thousands of people who use EventHub to discover new opportunities, expand their network,
+                        and create unforgettable memories.</p>
+                    <a href="#events" class="cta-button">Browse Events</a>
+                </div>
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                        alt="People at an event">
+                </div>
+            </div>
+        </div>
+
+        <!-- Featured Events Section -->
+        <section class="events-section">
+            <div class="section-header">
+                <h2>Featured Events</h2>
+                <p>Discover our most popular upcoming events</p>
+            </div>
+
+            <!-- Only showing the event cards section with the added data-event-id attributes -->
+            <div id="events" class="event-cards">
+                <!-- Event Card 1 -->
+                <div class="event-card" data-event-id="event1">
+                    <div class="event-image">
+                        <img src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                            alt="Tech Conference">
+                    </div>
+                    <div class="event-details">
+                        <h3>Tech Innovation Summit</h3>
+                        <div class="event-meta">
+                            <p><i class="fas fa-calendar-alt"></i> June 15, 2023</p>
+                            <p><i class="fas fa-map-marker-alt"></i> San Francisco, CA</p>
+                        </div>
+                        <p class="event-description">Join industry leaders and innovators for a day of inspiring talks,
+                            workshops, and networking opportunities focused on the future of technology.</p>
+                        <a href="#" class="more-info-btn">More Info</a>
+                    </div>
+                </div>
+
+                <!-- Event Card 2 -->
+                <div class="event-card" data-event-id="event2">
+                    <div class="event-image">
+                        <img src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                            alt="Music Festival">
+                    </div>
+                    <div class="event-details">
+                        <h3>Summer Music Festival</h3>
+                        <div class="event-meta">
+                            <p><i class="fas fa-calendar-alt"></i> July 8-10, 2023</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Austin, TX</p>
+                        </div>
+                        <p class="event-description">Experience three days of amazing live performances from top artists
+                            across multiple genres. Food, camping, and unforgettable memories included!</p>
+                        <a href="#" class="more-info-btn">More Info</a>
+                    </div>
+                </div>
+
+                <!-- Event Card 3 -->
+                <div class="event-card" data-event-id="event3">
+                    <div class="event-image">
+                        <img src="https://images.unsplash.com/photo-1551818255-e6e10975bc17?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1073&q=80"
+                            alt="Design Workshop">
+                    </div>
+                    <div class="event-details">
+                        <h3>UX Design Masterclass</h3>
+                        <div class="event-meta">
+                            <p><i class="fas fa-calendar-alt"></i> August 22, 2023</p>
+                            <p><i class="fas fa-map-marker-alt"></i> New York, NY</p>
+                        </div>
+                        <p class="event-description">Learn practical UX design skills from industry experts in this
+                            hands-on workshop. Perfect for beginners and intermediate designers looking to level up.</p>
+                        <a href="#" class="more-info-btn">More Info</a>
+                    </div>
+                </div>
+
+                
+            </div>
+
+
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="events.js"></script>
+</body>
+
+</html>
